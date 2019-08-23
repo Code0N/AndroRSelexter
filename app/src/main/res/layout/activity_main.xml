@@ -4,11 +4,40 @@
     android:layout_height="match_parent">
 
     <EditText
+        android:id="@+id/optET"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:hint="@string/optETHint"
         android:inputType="textMultiLine"
-        android:id="@+id/optET"
+        android:layout_above="@id/clearButton"
         />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/selButton"
+        android:text="Выбрать"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="randomSelect"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/clearButton"
+        android:text="Очистить"
+        android:layout_above="@id/selButton"
+        android:layout_centerHorizontal="true"
+        android:onClick="clearOE"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hintLabel"
+        android:text="@string/androrselextertvhint"
+        android:layout_above="@id/optET"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

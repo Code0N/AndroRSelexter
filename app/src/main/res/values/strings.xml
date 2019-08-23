@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">AndroRSelexter</string>
     <string name="optETHint">Введите ваши опции для случайного выбора</string>
+    <string name="androrselextertvhint">AndroRSelexter</string>
 </resources>
